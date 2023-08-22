@@ -10,7 +10,7 @@ def search():
     url = "https://pubmed.ncbi.nlm.nih.gov/?term=" + query
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
-    results = soup.find_all('a', {'class': 'docsum-title'}, limit=1)
+    results = soup.find_all('a', {'class': 'docsum-title'}, limit=3)  # Change limit to 3
     data = []
     for result in results:
         link = "https://pubmed.ncbi.nlm.nih.gov" + result.get('href')
