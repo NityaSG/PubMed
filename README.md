@@ -76,6 +76,3 @@ Replace `<your_query>` with your desired search query.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
-
-Replace placeholders like `your-username`, `pubmed-search-api-flask`, and customize any other details to match your actual repository and project information.
